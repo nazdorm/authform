@@ -24,6 +24,9 @@
               <input type="text" placeholder="Пароль" required minlength="6" maxlength="20" pattern="[a-zA-Z0-9]+" title="В пароле могут присутствовать только буквы латинского алфавита и/или цифры.
               Длина пароля должна быть не менее 6 символов и не более 20 символов">
         </div>
+        <div class="form-field">
+              <input type="text" placeholder="Номер телефона" required pattern="8\d{10}|\+7[\(]\d{3}[\)]\d{7}|\+7\d{10}|8[\(]\d{3}[\)]\d{7}" maxlength="14" title="Введите корректный номер телефона по форматам 8хххххххххх, +7хххххххххх, 8(ххх)ххххххх, +7(ххх)ххххххх">
+        </div>
       </div>
       <div class="form-buttons">
         <button class="button">Войти</button>
