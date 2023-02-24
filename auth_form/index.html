@@ -15,7 +15,20 @@
         <h1 class="form-title">
             Авторизация
           </h1>
-      <form class="autor" action="Авторизация успешно пройдена!" method="post">
+      <form class="autor" id="123" action="javascript:check()">
+        
+        <script>
+        let form = document.getElementById('123');
+        function check() 
+        
+        {
+            alert("усё валидно");
+            form.action = '#';
+            form.submit();
+        }
+
+        </script>
+        
         <div class="form-fields">
           <div class="form-field">
               <input type="text" placeholder="Почта" required pattern="\S+@[a-zA-Z]+.[a-zA-Z]+" title="Введите адрес электронной почты">
